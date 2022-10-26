@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activities.NeedHelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/need_help_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transparent_backgorund"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/need_help_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/faq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faq_s"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/need_help_top"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="30sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mail_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_baseline_mail_outline_24"
+        android:backgroundTint="#23A7FF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

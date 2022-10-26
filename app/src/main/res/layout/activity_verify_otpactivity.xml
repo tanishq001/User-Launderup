@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activities.VerifyOTPActivity"
+    android:background="@color/off_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/verify_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/verify_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/rectangle_54back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="90dp"
+            android:gravity="center"
+            android:text="@string/verification_code"
+            android:textColor="@color/white"
+            android:textSize="39sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/enter_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/verify_top"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/enter_otp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pin_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pinLength="6"
+        app:layout_constraintTop_toBottomOf="@id/enter_otp"
+        app:layout_constraintBottom_toTopOf="@id/verify_code_button"
+        app:pinWidth="43dp"
+        app:pinHeight="43dp"
+        app:forceKeyboard="false"
+        app:inputType="number"
+        app:splitWidth="20dp"
+        app:cursorVisible="true" />
+
+    <Button
+        android:id="@+id/verify_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/enter_otp"
+        android:text="@string/verify_code"
+        android:backgroundTint="@color/light_blue"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/verify_code_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/resend_otp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

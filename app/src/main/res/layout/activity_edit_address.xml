@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activities.EditAddressActivity"
+    android:background="#E5E5E5">
+
+    <ImageView
+        android:id="@+id/add_address_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/page_top"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/add_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_address"
+        app:layout_constraintTop_toBottomOf="@+id/add_address_top"
+        android:textSize="24sp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000000"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_address_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="30sp"
+        android:hint="@string/name"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="#23A7FF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="#ffffff"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_address_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/full_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:background="#ffffff"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_address_pin_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_address_mobile_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pin_code"
+            android:inputType="text|textEmailAddress"
+            android:background="#ffffff" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_address_house_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_address_pin_code"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flat, House No., Building, Company, Apartment"
+            android:inputType="text"
+            android:background="#ffffff"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_address_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_address_house_no"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_top"
+            android:hint="Area, Street, Sector, Village"
+            android:inputType="number"
+            android:background="#ffffff"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_address_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_address_area"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_top"
+            android:hint="@string/city"
+            android:inputType="number"
+            android:background="#ffffff"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_address_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/save_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#23A4FF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569458887657",
+    "project_id": "launderup-fce42",
+    "storage_bucket": "launderup-fce42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569458887657:android:b4d89b44b53cc5a0cc9978",
+        "android_client_info": {
+          "package_name": "com.example.launderup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569458887657-ji5ou7lkot8bs5bqmtb7m1ecmg4hhubf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCusV-xNGZe-_1IadOgrHP4U7vpvyL281s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569458887657-ji5ou7lkot8bs5bqmtb7m1ecmg4hhubf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
